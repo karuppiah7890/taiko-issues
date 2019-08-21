@@ -1,0 +1,19 @@
+<div>
+  <form name="inputTypeText">
+    <!--  //Read only input with type text -->
+    <div name="inputTypeTextWithInlineTextReadonly">
+      <input type="text" readonly />inputTypeTextWithInlineTextReadonly
+    </div>
+    <div name="focused input"><input type="text" autofocus />focused input</div>
+    <div name="input-type-text"><input type="text" />input-type-text</div>
+    <div>
+      <input type="text" disabled="true" id="disabled-input" />initially
+      disabled input-type-text
+    </div>
+  </form>
+  <script type="text/javascript">
+    setTimeout(() => {
+      document.getElementById('disabled-input').disabled = false;
+    }, 100);
+  </script>
+</div>
